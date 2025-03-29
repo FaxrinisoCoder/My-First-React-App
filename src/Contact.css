@@ -1,0 +1,154 @@
+.grid_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.continer2 {
+  padding: 80px;
+}
+.continer23 {
+  padding-top: 40px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  width: 575px;
+  border: 1px solid #000000;
+}
+.input2 {
+  padding: 25px;
+}
+.label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.btn_contact {
+  background-color: #212529;
+  font-size: 20px;
+  font-weight: 400;
+  width: 575px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.contact_photo {
+  width: 575px;
+  height: 384px;
+}
+@media (max-width: 1200px) {
+  .continer2 {
+    padding: 60px;
+  }
+  .continer23 {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .input {
+    width: 400px;
+  }
+.btn_contact {
+    width: 400px;
+}
+
+.team_title2 {
+    font-size: 30px;
+}
+
+
+}
+@media (max-width: 1100px) {
+      .input {
+    width: 350px;
+  }
+.btn_contact {
+    width: 350px;
+}
+}
+@media (max-width: 768px) {
+    .grid_contact {
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+          .input {
+    width: 575px;
+  }
+.btn_contact {
+    width: 575px;
+}
+.continer2 {
+    padding: 30px;
+  }
+  .continer23 {
+    padding-top: 10px;
+  }
+  .team_title2 {
+    font-size: 24px;
+}
+.team_text {
+    font-size: 20px;
+}
+.label {
+    font-size: 20px;
+}
+.contact_right{order: 1;}
+.contact_left{order: 2;}
+
+
+}
+@media (max-width: 600px) {
+             .input {
+    width: 480px;
+  }
+.btn_contact {
+    width: 480px;
+} 
+.contact_photo {
+    width: 480px;
+}
+}
+@media (max-width: 530px) {
+             .input {
+    width: 400px;
+  }
+.btn_contact {
+    width: 400px;
+} 
+.contact_photo {
+    width: 400px;
+}
+.continer2 {
+    padding: 20px;
+  }
+
+}
+@media (max-width: 480px) {
+             .input {
+    width: 335px;
+  }
+.btn_contact {
+    width: 335px;
+} 
+.contact_photo {
+    width: 355px;
+}
+.continer2 {
+    padding: 15px;
+  }
+
+}
+
+
+
+
+
+
+

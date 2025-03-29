@@ -1,0 +1,172 @@
+.continer1 {
+  padding: 20px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  background-color: #74c69d;
+}
+
+.header_logo {
+  width: 150px;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: "Work Sans", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #dfffe1;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.menu.active {
+  transform: rotate(90deg);
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .menu {
+    display: none;
+  }
+
+  .header_nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+  }
+
+  .link {
+    font-size: 22px;
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .continer1 {
+    padding: 30px 60px;
+  }
+
+  .header_logo {
+    width: 130px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .header_nav {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 60vh;
+    background-color: #74c69d;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .header_nav.active {
+    left: 0;
+  }
+  .link{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .continer1 {
+    padding: 20px 40px;
+  }
+
+  .header_logo {
+    width: 120px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .header_nav {
+    width: 70%;
+  }
+
+  .header_nav.active {
+    left: 0;
+  }
+
+  .link {
+    margin-top: 30px;
+    margin-left: 0;
+    font-size: 24px;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
+@media (max-width: 375px) {
+  .continer1 {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .header_logo {
+    width: 100px;
+  }
+  .menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: -50px; 
+    z-index: 10;
+    transition: right 0.3s ease-in-out; 
+  }
+
+  .menu.active {
+    right: 20px; 
+  }
+
+  .header_nav {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .header_nav.active {
+    left: 0;
+  }
+
+  .link {
+    line-height: 1.6;
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
