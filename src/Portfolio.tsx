@@ -1,4 +1,4 @@
-import portfolio_photo from './assets/dscdsc 1.svg'
+import portfolio_photo from "./assets/dscdsc 1.svg";
 import portfolio_photo2 from "./assets/Frame_42.svg";
 import portfolio_photo3 from "./assets/5175975 1.png";
 import portfolio_photo4 from "./assets/Frame_43_ 3.svg";
@@ -6,14 +6,7 @@ import portfolio_photo5 from "./assets/Frame_43_1.svg";
 import portfolio_photo6 from "./assets/Frame_43_2.svg";
 import portfolio_photo7 from "./assets/Group.png";
 import portfolio_photo8 from "./assets/Frame45.svg";
-import './Portfolio.css'
-
-
-
-
-
-
-
+import "./Portfolio.css";
 
 const Portfolio = () => {
   return (
@@ -51,14 +44,12 @@ const Portfolio = () => {
             <img className="portfolio_img" src={portfolio_photo} alt="pic" />
           </div>
           <div className="portfolio_img_box">
-            <img className="portfolio_img" src={portfolio_photo3}
-             alt="pic" />
-          </div> 
-
+            <img className="portfolio_img" src={portfolio_photo3} alt="pic" />
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Portfolio
+export default Portfolio;
